@@ -1,0 +1,176 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminPage.master.cs" Inherits="Admin_AdminPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Classified Website </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="css/other.css" rel="stylesheet" type="text/css">
+    <link rel="Shortcut Icon" href="../favicon.ico" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="left" valign="top" bgcolor="#FFFFFF">
+    <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+      <tr>
+        <td height="10" align="left" valign="top" bgcolor="#FFFFFF"></td>
+      </tr>
+      <tr>
+        <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+         <tr>
+            <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="1%" align="left" valign="top">&nbsp;</td>
+                <td  align="left" valign="middle"><a href="categories.aspx" style="text-decoration:none;"> 
+                <img alt="Classified" src="images/claaimages.jpg" width="70px" height="50px" border="0" /> <font color="red" size="6px"><i><b>ClassiFied</b> </i></font> 
+                <%--<img src="../images/markologo.jpg" alt="markologo" width="229" height="42" border="0" />--%></a></td>
+                <td width="75%" align="left" valign="top"  class="mail01"><ul>
+              <li><a href="ListCategory.aspx" class="mail01">Category</a></li>
+              <li>|</li>
+              <li><a href="DetailList.aspx" class="mail01">DetailForm</a></li>
+              <li>|</li>
+              <li><a href="Users.aspx" class="mail01">User List</a></li>
+              <li>|</li>
+            <%--  <li><a href="Bloglist.aspx" class="mail01">Blog</a></li>
+              <li>|</li>
+              <li><a href="sitevisit.aspx" class="mail01">Site Visit</a></li>
+              <li>|</li>--%>
+            <%--  <li><a href="AddMainCategoryMetatag.aspx" class="mail01">SEO</a></li>
+              <li>|</li>--%>
+              <li><a href="StateList.aspx" class="mail01">State</a></li>
+              <li>|</li>
+              <li><a href="CityList.aspx" class="mail01">City</a></li>
+               <li>|</li>
+              <li><a href="LocalityList.aspx" class="mail01">Locality</a></li>
+              <li>|</li>
+              <li><a href="ListNews.aspx" class="mail01">News  </a></li>
+               <li>|</li>
+              <li><a href="ListTestimonial.aspx" class="mail01">Testimonial </a></li>
+              </ul></td>
+              </tr>
+            </table></td>
+          </tr>
+          <tr>
+            <td height="10" align="left" valign="top" bgcolor="#FFFFFF"></td>
+          </tr>
+          <tr>
+            <td align="right" valign="top" bgcolor="#FFFFFF">
+            <%--<a href="#"><img src="../images/logout.jpg" alt="logout button" width="60" height="26" border="0" /></a>--%>
+                <asp:ImageButton ID="imglogout" ImageUrl="~/images/logout.jpg" runat="server" 
+                    onclick="imglogout_Click" />
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+          </tr>
+         <%-- <tr>
+            <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="90%" align="left" valign="middle">&nbsp;</td>
+                <td width="10%" align="left" valign="middle">
+                <a href="#"><img src="../images/logout.jpg" alt="logout button" width="60" height="26" border="0" /></a>
+                </td>
+              </tr>
+            </table></td>
+          </tr>--%>
+          <tr>
+            <td align="left" valign="top" bgcolor="#FFFFFF" class="mail01">
+          <hr />
+
+             </td>
+          </tr>
+         
+          <tr>
+            <td align="left" valign="top" bgcolor="#FFFFFF"><!-- InstanceBeginEditable name="EditRegion3" -->
+
+
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #c0c0c0;
+}
+-->
+</style>
+<table width="100%" bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td colspan="2" align="left" valign="top"><table bgcolor="#FFFFFF" width="100%" border="0" cellspacing="0" cellpadding="0">
+      <%--<tr>
+        <td width="5%" align="left" valign="top">&nbsp;</td>
+        <td width="95%" align="left" valign="top" class="mail01">&nbsp;</td>
+      </tr>--%>
+    </table></td>
+  </tr>
+  
+</table>
+<link href="../style.css" rel="stylesheet" type="text/css" />
+<!-- InstanceEndEditable --></td>
+          </tr>
+        </table></td>
+      </tr>
+      
+      
+    </table></td>
+  </tr>
+</table>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+     <tr>
+    <td align="left" valign="top" bgcolor="#FFFFFF">
+        <table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tr>
+        <td align="left" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="20%" align="left" valign="top" class="nav">&nbsp;<%--Share : <img src="../images/share-icon.jpg" alt="shares icon" width="123" height="18" align="middle" />--%></td>
+            <td width="60%" align="center" valign="middle" class="footer"><%--<ul>
+              <li><a href="#" class="footer">Home</a></li>
+              <li>|</li>
+              <li><a href="#" class="footer">T&amp;C</a></li>
+              <li>|</li>
+              <li><a href="#" class="footer">Faq</a></li>
+              <li>|</li>
+              <li><a href="../blogging.html" class="footer">Blogs</a></li>
+              <li>|</li>
+              <li><a href="#" class="footer">Archive</a></li>
+              <li>|</li>
+              <li><a href="../free_sms.html" class="footer">SMS</a></li>
+              <li>|</li>
+              <li><a href="#" class="footer">About Us</a></li>
+              <li>|</li>
+              <li><a href="../contact_us.html" class="footer">Contact Us</a></li>
+            </ul>--%> &nbsp;</td>
+            <td width="20%" align="left" valign="top" class="nav"> &nbsp;<%--Follow us on :<img src="../images/follow-us-icon.jpg" alt="follow us on icon" width="56" height="22" align="middle" />--%></td>
+          </tr>
+          <tr>
+            <td height="10" align="left" valign="top"></td>
+            <td height="10" align="left" valign="top"></td>
+            <td height="10" align="left" valign="top"></td>
+          </tr>
+
+          <tr><td colspan="3"> <hr /></td> </tr>
+          <tr>
+              <td height="40" align="center" valign="middle" bgcolor="#434343" class="footer01"><font color="white" >© Copyright 2012 classified Website </font> </td>
+            <td height="40" align="center" valign="middle" bgcolor="#434343" class="footer01"> <font color="white" >Galagali Multimedia Pvt Ltd</font> </td>
+            <td height="40" align="left" valign="middle" bgcolor="#434343" class="footer01"> <font color="white" > Designed By</font> <a href="http://ucc-india.com" class="footer01"><font color="white" >Universal Advtg.</font></a></td>
+        </tr>
+        </table></td>
+      </tr>
+      </table>
+      </td>
+      </tr>
+    </table>
+    </form>
+</body>
+</html>
